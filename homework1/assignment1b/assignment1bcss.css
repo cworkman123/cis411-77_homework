@@ -1,0 +1,76 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 14, 2014, 6:49:04 PM
+    Author     : Channing
+*/
+
+
+header h1 {
+    background-image: url(verito.png);
+}
+body {
+    font-family: sans-serif;
+    background-image: url(bck.png),url(bck2.png);
+    background-position: left,30%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 450px;
+    float: left;
+    font-size: small;
+
+}
+p {
+    margin: 5px;
+    text-align:justify;
+}
+
+h2 {
+    background: url(svirgolata.png) top left;
+    background-repeat: no-repeat;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.summary {
+    background: url(verito.png) no-repeat top right;
+    padding: 100px 0 0 260px;
+    
+}
+.preamble {
+    padding: 75px 0 0 260px;
+}
+
+.mainsupporting {
+    padding: 75px 0 0 260px;
+}
+
+.participation {
+    padding: 75px 0 0 260px;
+}
+
+.benefits {
+    padding: 75px 0 0 260px;
+}
+
+.requirements {
+    padding: 75px 0 0 260px;
+    
+}
+
+
+.sidebar {
+    top: 170px;
+    margin-left: 523px;
+    position: absolute;
+    text-align: right;
+    font-size: small;
+    
+}
+
+.titlepic {
+    background: url(verito.png) no-repeat top left;
+}
