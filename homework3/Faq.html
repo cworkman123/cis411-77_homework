@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>faq</title>
+        <meta charset="windows-1252">
+        <meta name="viewport" content="width=device-width">
+        <link rel='stylesheet' href='homework3_styles.css' type='text/css'>
+        <link rel='stylesheet' type='text/css' href="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/css/jquery.dataTables.css">
+          
+    </head>
+    <body>
+        <div class='faqheader'>
+            <h1>Faqs</h1>
+        </div>
+        <div class = links>
+            <a href="index.html">Welcome</a>
+            <a href='TicTacToe.html'>Tic Tac Toe Game!</a>
+            <a href='Faq.html'>Faqs</a>
+            <a href='registration.html'>Register</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+        <div>
+            <table id="faqdatatable">
+                <thead class='faqtableheaders'><tr>
+                <th id='category'>Category</th>
+                <th id='question'>Question</th>
+                <th id='answer'>Answer</th>
+                </tr></thead>
+                <tbody>
+                <tr>
+                    <td>Web site</td>
+                    <td>What is the color of the background?</td>
+                    <td>Blue</td>
+                </tr>
+                <tr>
+                    <td>Web site</td>
+                    <td>What is the character on the backdrop?</td>
+                    <td>Sonic the Hedgehog</td>
+                </tr>
+                <tr>
+                    <td>Game</td>
+                    <td>How many players can play Tic Tac Toe?</td>
+                    <td>It's a two player game</td>
+                </tr>
+                <tr>
+                    <td>Web site</td>
+                    <td>How many pages are connected to this Web site?</td>
+                    <td>5 pages.</td>
+                </tr>
+                <tr>
+                    <td>Developer</td>
+                    <td>How can I contact the Developer?</td>
+                    <td>The Contact Us Page</td>
+                </tr>
+                <tr>
+                    <td>Developer</td>
+                    <td>What information is wanted in order to contact the developer?</td>
+                    <td>Name, Email, and Comments</td>
+                </tr>
+                <tr>
+                    <td>Web site</td>
+                    <td>How can I register?</td>
+                    <td>The Registration Page</td>
+                </tr>
+                <tr>
+                    <td>Web site</td>
+                    <td>What information is needed to register?</td>
+                    <td>User Name, First Name, Last Name, Email, and Password</td>
+                </tr>
+                <tr>
+                    <td>School</td>
+                    <td>What course assigned this homework?</td>
+                    <td>CIS 411 Web Architecture</td>
+                </tr>
+                <tr>
+                    <td>School</td>
+                    <td>Who is the Professor to this course?</td>
+                    <td>Wesley Reisz</td>
+                </tr>
+                <tr>
+                    <td>School</td>
+                    <td>What College offers this course?</td>
+                    <td>College Of Business</td>
+                </tr>
+                <tr>
+                    <td>School</td>
+                    <td>What University does this school belong to?</td>
+                    <td>University of Louisville</td>
+                </tr>
+                <tr>
+                    <td>School</td>
+                    <td>What Assignment is this?</td>
+                    <td>Assignment 3: Tic Tac Toe</td>
+                </tr>
+                <tr>
+                    <td>Web site</td>
+                    <td>What plugin does this DataTable use?</td>
+                    <td>JQuery DataTable Plugin</td>
+                </tr>
+                <tr>
+                    <td>Developer</td>
+                    <td>Is this site the developers first time using JQuery?</td>
+                    <td>Yes</td>
+                </tr>
+                <tr>
+                    <td>Developer</td>
+                    <td>What year is the developer?</td>
+                    <td>Senior</td>
+                </tr>
+                <tr>
+                    <td>Developer</td>
+                    <td>How old is the developer?</td>
+                    <td>23 years old</td>
+                </tr>
+                <tr>
+                    <td>Developer</td>
+                    <td>Is the developer male or female?</td>
+                    <td>Male</td>
+                </tr>
+                <tr>
+                    <td>Developer</td>
+                    <td>What is the developers favorite hobbies?</td>
+                    <td>Skateboarding and Snowboarding</td>
+                </tr>
+                <tr>
+                    <td>Developer</td>
+                    <td>What is the developers favorite show?</td>
+                    <td>Game of Thrones</td>
+                </tr>
+                </tbody>
+            </table>
+            <script type="text/javascript" charset="utf-8" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.2.min.js"></script>
+            <script type="text/javascript" charset="utf-8" src="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/jquery.dataTables.min.js"></script>
+            <script>
+            $(function(){
+              $("#faqdatatable").dataTable();
+            })
+            </script>
+        </div>
+    </body>
+</html>

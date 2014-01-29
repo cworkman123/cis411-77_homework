@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>CalculatorJava</title>
+        <meta charset="windows-1252">
+        <meta name="viewport" content="width=device-width">
+        <link rel ="stylesheet" href="assignment2styles.css">
+        
+        <script language="javascript">
+            var total = 0;
+            var TheOperator = 0;
+            
+            function calculate(number){
+               frm = document.getElementById('number');
+               frm.value = frm.value + number;
+            }
+            
+            function operator(opval){
+                TheOperator = opval;
+                total = document.getElementById('number').value;
+                document.getElementById('number').value = "";
+            }
+            
+            function convertToNegative(opval){
+                TheOperator = opval;
+                var CurrentDisplayValue = eval(document.getElementById('number').value)
+                
+                if(TheOperator=="+/-"){
+                    answerDisplayed = (CurrentDisplayValue * -1);
+                }
+                document.getElementById('number').value = answerDisplayed;
+                
+            }
+
+            
+            function equals(){
+                var CurrentDisplayValue = eval(document.getElementById('number').value)
+                var PreviousDisplayValue = eval(total)
+                
+                if(TheOperator=="+") {
+                    answerDisplayed = PreviousDisplayValue + CurrentDisplayValue;
+                }
+                else if(TheOperator=="*"){
+                    answerDisplayed = PreviousDisplayValue * CurrentDisplayValue;
+                }
+                else if(TheOperator=="-"){
+                    answerDisplayed = PreviousDisplayValue - CurrentDisplayValue;
+                }
+                else if(TheOperator=="/"){
+                    answerDisplayed = PreviousDisplayValue / CurrentDisplayValue;
+                }
+                else if(TheOperator=="%"){
+                    answerDisplayed = PreviousDisplayValue % CurrentDisplayValue;
+                }
+                document.getElementById('number').value = answerDisplayed ;
+            }
+            
+        </script> 
+            
+        
+    </head>
+    <div><h1>Calculator</h1></div>
+    <div class="calculatorformdiv">
+    <body>
+        <!--open html-->
+        <form name="form" id="calculator">
+            
+        <!--enter 1st number-->
+        <table border ="4" class="calculatortable">
+        <TR>
+        <TD>
+        <input type="text" name="textDisplay" id="number" value="">
+        <br>
+        </td>
+        </tr>
+        <tr>
+        <td id="buttons" class="button">
+        <input type=Reset  value="CE"><input type="button" name="positiveToNegative" value="+/-" onclick="convertToNegative('+/-')"><input type="button" name="modulus" value="%" onclick="operator('%')">
+        <br> 
+        <input type="button" name="7" value="7" onclick="calculate(7)"><input type="button" name="8" value="8" onclick="calculate(8)"><input type="button" name="9" value="9" onclick="calculate(9)"><input type="button" name="divide" value="/" onclick="operator('/')">
+        <br>
+        <input type="button" name="4" value="4" onclick="calculate(4)"><input type="button" name="5" value="5" onclick="calculate(5)"><input type="button" name="6" value="6" onclick="calculate(6)"><input type="button" name="multiplication" value="x" onclick="operator('/')">
+        <br>
+        <input type="button" name="1" value="1" onclick="calculate(1)"><input type="button" name="2" value="2" onclick="calculate(2)"><input type="button" name="3" value="3" onclick="calculate(3)"><input type="button" name="minus" value="-" onclick="operator('-')">
+        <br>
+        <input type="button" name="zero" value="0" onclick="calculate(0)"><input type="button" name="decimal" value="." onclick="calculate(.)"><input type="button" name="equal" value="=" onclick="equals()"><input type="button" name="plus" value="+" onclick="operator('+')">
+        <br>
+        </td>
+        </tr>
+        </table>
+    </div>
+
+        <div>
+            <a href="index.html">Calculator</a>
+            <a href="registration.html"> Registration Form</a>
+            <a href="feedbackform.html"> Feedback Form</a>
+            <a href="faq.html">Faqs</a>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,158 @@
+html {
+    background: url(background.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.gamemap {
+    height: 100px;
+    width: 100px;
+    background-color: lightcoral;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.player1 {
+    background-color: blue;
+}
+.player2 {
+    background-color: white;
+}
+.playagain {
+    background-color: #4ECDC4;
+}
+
+.welcome {
+    color: lightcoral;
+    font:fantasy;
+    font-size: larger;
+}
+
+.tictactoeheader{
+    color: lightcoral;
+    font:fantasy;
+    font-size: larger;
+}
+
+.faqheader{
+    color: lightcoral;
+    font:fantasy;
+    font-size: larger;
+}
+
+.registerheader{
+    color: lightcoral;
+    font:fantasy;
+    font-size: larger;
+}
+
+.contactheader{
+    color: lightcoral;
+    font:fantasy;
+    font-size: larger;
+}
+
+.faqtableheaders{
+    color: lightcoral;
+    font:fantasy;
+    font-size: larger;
+}
+
+
+#contactus-form {
+
+    border: 1px solid #DFDCDC;
+    border-radius: 15px 15px 15px 15px;
+    display: inline-block;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    margin-top: 10px;
+    padding: 25px 50px 10px;
+    width: 350px;
+}
+
+#contactus-form .fieldgroup {
+
+    display: inline-block;
+    padding: 8px 10px;
+    width: 340px;
+}
+
+#contactus-form .fieldgroup label {
+    float: left;
+    padding: 15px 0 0;
+    text-align: right;
+    width: 110px;
+}
+
+#contactus-form .fieldgroup input, #register-form .fieldgroup textarea, #register-form .fieldgroup select {
+    float: right;
+    margin: 10px 0;
+    height: 25px;
+}
+
+#contactus-form .submit {
+    padding: 10px;
+    width: 220px;
+    height: 40px !important;
+}
+
+#contactus-form .fieldgroup label.error {
+    color: red;
+    display: inline-block;
+    margin: 4px 0 5px 125px;
+    padding: 0;
+    text-align: left;
+    width: 220px;
+}
+
+#registration-form {
+
+    border: 1px solid #DFDCDC;
+    border-radius: 15px 15px 15px 15px;
+    display: inline-block;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    margin-top: 10px;
+    padding: 25px 50px 10px;
+    width: 350px;
+}
+
+#registration-form .fieldgroup {
+
+    display: inline-block;
+    padding: 8px 10px;
+    width: 340px;
+}
+
+#registration-form .fieldgroup label {
+    float: left;
+    padding: 15px 0 0;
+    text-align: right;
+    width: 110px;
+}
+
+#registration-form .fieldgroup input, #register-form .fieldgroup textarea, #register-form .fieldgroup select {
+    float: right;
+    margin: 10px 0;
+    height: 25px;
+}
+
+#registration-form .submit {
+    padding: 10px;
+    width: 220px;
+    height: 40px !important;
+}
+
+#registration-form .fieldgroup label.error {
+    color: red;
+    display: inline-block;
+    margin: 4px 0 5px 125px;
+    padding: 0;
+    text-align: left;
+    width: 220px;
+}
+

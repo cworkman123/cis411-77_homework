@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="windows-1252">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="assignment2styles.css">
+        
+        <script language="javascript">
+            
+            function verify(){
+                if(!document.getElementById('feedback').value.trim().length){
+                    alert('Please enter feedback.')
+                }
+                
+                var email = document.getElementById('email').value;
+                var atpos = email.indexOf("@");
+                var dotpos = email.lastIndexOf(".");
+                
+                if (atpos<1 || dotpos<atpos+2 || dotpos+2>=email.length)
+                {
+                    alert("Not a valid Email address");
+                    return false;
+                }
+                
+            }
+            
+            
+            
+            
+        </script>
+        
+        
+        
+        
+    </head>
+    <body>
+        <div><h1>Feedback Form</h1></div>
+        <div class="feedbackformdiv">
+            <form name='feedbackform' id='feedbackform'>
+            
+                <table border="4" class="feedbackformtable">
+                    <tr>
+                        <td>
+                            Enter Email Address: <input type="text" name="textDisplay" id="email" value="">
+                            <br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <textarea name="feedback" id="feedback"></textarea>
+                            <br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="submit" value="Send Feedback.." onclick="verify()"/>
+                        </td>
+                    </tr>
+                </table>
+                    
+                
+        </div>
+        <div>
+            <a href="index.html">Calculator</a>
+            <a href="registration.html"> Registration Form</a>
+            <a href="feedbackform.html"> Feedback Form</a>
+            <a href="faq.html">Faqs</a>
+        </div>
+    </body>
+</html>

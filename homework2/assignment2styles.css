@@ -1,0 +1,66 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 21, 2014, 10:36:43 PM
+    Author     : Channing
+*/
+
+body {
+    
+    background-image: url(background.jpg);
+    background-repeat: repeat;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+.button{
+    text-align: left;
+    padding-left: 3px;
+	
+}
+
+input#email{
+    background-color: lightgray;
+    font-size: 13px;
+    
+}
+
+textarea#feedback{
+    height: 30px;
+    width: 325px;
+    background-color: lightgray;
+    font-size: 12px;
+}
+
+
+table.feedbackformtable {
+    margin-left: auto;
+    margin-right: auto;
+    
+    font-family: verdana,arial,sans-serif;
+    border-collapse: collapse;
+    background-color:gray;
+    
+}
+
+INPUT#number{
+    height: 30px;
+    width: 97px;
+    background-color: lightgray;
+    font-size: 25px;
+}
+
+table.calculatortable {
+    
+    margin-left: auto;
+    margin-right: auto;
+    
+    font-family: verdana,arial,sans-serif;
+    border-collapse: collapse;
+    background-color:gray;
+
+}
+
