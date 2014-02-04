@@ -5,6 +5,9 @@
         <title>Kitten Kare</title>
     </head>
     <style>
+        
+@media screen
+{
 #container
 {
     margin: 0 auto;
@@ -88,6 +91,13 @@
 	text-align: right;
 	padding: 20px;
 	height: 1%;
+}
+}
+
+@media print 
+{
+    #header {display:none;} 
+    #content h2 {margin: 0;}
 }
 
     </style>
