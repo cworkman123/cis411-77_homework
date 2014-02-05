@@ -11,3 +11,14 @@
 {
  background-color: white;   
 }
+
+.col-md-4
+{
+    list-style-type: none;
+}
+
+.alert 
+{
+    background-color: bisque;
+    border: 1px solid black;
+}
