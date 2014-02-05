@@ -1,4 +1,5 @@
-[class*="col-"] {
+.col-md-3
+{
   padding-top: 15px;
   padding-bottom: 15px;
   background-color: #eee;
@@ -12,9 +13,15 @@
  background-color: white;   
 }
 
+.col-md-12
+{
+    background-color: white;
+}
+
 .col-md-4
 {
     list-style-type: none;
+    background-color: white;
 }
 
 .alert 
