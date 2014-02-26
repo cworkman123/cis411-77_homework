@@ -91,7 +91,7 @@ namespace MvcMovie.Controllers
         //
         // GET: /Movies/Delete/5
 
-        public ActionResult Delete(int id = 0)
+        public ActionResult Delete(FormCollection fcNotUsed, int id = 0)
         {
             Movie movie = db.Movies.Find(id);
             if (movie == null)
