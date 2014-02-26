@@ -36,6 +36,13 @@
     <div class="display-field">
         @Html.DisplayFor(model => model.Price)
     </div>
+    <div class="display-field">
+        @Html.LabelFor(model => model.Rating)
+    </div>
+    <div class="display-field">
+        @Html.EditorFor(model => model.Rating)
+        @Html.ValidationMessageFor(model => model.Rating)
+    </div>
 </fieldset>
 <p>
     @Html.ActionLink("Edit", "Edit", new { id=Model.ID }) |
