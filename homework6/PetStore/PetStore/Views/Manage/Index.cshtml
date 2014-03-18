@@ -1,13 +1,27 @@
 ﻿@model IEnumerable<PetStore.Models.Manage>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Manage";
 }
 
-<h2>Index</h2>
+<h2>Manage</h2>
 
 <p>
     @Html.ActionLink("Create New", "Create")
+    
+    @using (Html.BeginForm())
+    {
+        <p>
+            Name: @Html.TextBox("SearchString")
+           
+            
+
+            <input type="submit" value="Filter"/>
+            
+
+        </p>
+    }
+
 </p>
 <table class="table">
     <tr>
