@@ -47,7 +47,7 @@
         <td>
             @Html.DisplayFor(modelItem => item.Name)
         </td>
-        <td class="description" style="text-overflow:ellipsis;">
+        <td style="text-overflow: ellipsis; max-width: 900px; overflow:hidden; white-space:nowrap" >
             @Html.DisplayFor(modelItem => item.Description)
         </td>
         <td>
