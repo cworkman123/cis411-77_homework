@@ -8,16 +8,19 @@
 
 <div>
     <h4>Manage</h4>
-	<hr />
+    <hr />
+    <div class="thumbnail">
+        <img src="@Html.DisplayFor(model => model.ImgLink)" height="25%" width="25%"/>
+    </div>
     <dl class="dl-horizontal">
         
-        <dt>
+        @*<dt>
             @Html.DisplayNameFor(model => model.ImgLink)
-        </dt>
+        </dt>*@
 
-        <dd class="thumbnail">
+        @*<dd>
             <img src=@Html.DisplayFor(model => model.ImgLink)/>
-        </dd>
+        </dd>*@
 
         <dt>
             @Html.DisplayNameFor(model => model.Name)
