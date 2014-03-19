@@ -32,6 +32,13 @@ hgroup,
 main,
 nav,
 section,
+
+
+description {
+    width: 150px;
+    text-overflow: ellipsis;
+}
+
 summary {
   display: block;
 }

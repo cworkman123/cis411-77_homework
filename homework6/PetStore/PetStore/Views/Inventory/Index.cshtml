@@ -28,6 +28,9 @@
 <table class="table">
     <tr>
         <th>
+            Picture
+        </th>
+        <th>
             @Html.DisplayNameFor(model => model.Name)
         </th>
         <th>
@@ -38,10 +41,13 @@
 
 @foreach (var item in Model) {
     <tr>
+        <td class="thumbnail">
+            <img src="http://www.bingsdoggrooming.com/pawprint.gif" alt="Red Paw Print" />
+        </td>
         <td>
             @Html.DisplayFor(modelItem => item.Name)
         </td>
-        <td>
+        <td class="description" style="text-overflow:ellipsis;">
             @Html.DisplayFor(modelItem => item.Description)
         </td>
         <td>
