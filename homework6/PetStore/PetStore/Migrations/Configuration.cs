@@ -1,4 +1,4 @@
-using PetStore.Models;
+﻿using PetStore.Models;
 
 namespace PetStore.Migrations
 {
@@ -34,32 +34,32 @@ namespace PetStore.Migrations
 
                 new Manage
                 {
-                    Name = "Poodle", DateReceived = DateTime.Now, Description = "Miniature Poodle that goes by the name Chewbacca or Chewy for short. He's very loving and loyal!",
-                    Price = 300M, Quantity = 1
+                    Name = "Poodle", DateReceived = DateTime.Now, Description = "The poodle is a group of formal dog breeds, the Standard Poodle, Miniature Poodle and Toy Poodle (one registry organisation also recognizes a Medium Poodle variety, between Standard and Miniature), with many coat colors. Originally bred in Germany as a type of water dog, the breed was standardized in France. The poodle is skillful in many dog sports, including agility, obedience, tracking, and even herding. Poodles have taken top honors in many conformation shows, including Best in Show at the Westminster Kennel Club Dog Show in 1991 and 2002, and at the World Dog Show in 2007 and 2010.",
+                    Price = 300M, Quantity = 23
                 },
                 
                 new Manage
                 {
-                    Name = "Lab", DateReceived = DateTime.Now, Description = "Full Black Lab that is very playful and hyper! He comes off as a great guard dog.",
-                    Price = 100M, Quantity = 1
+                    Name = "Lab", DateReceived = DateTime.Now, Description = "The Labrador Retriever, also known as simply Labrador or Lab, is one of several kinds of retrievers, a type of gun dog. Even-tempered and well-behaved around young children and the elderly. Labradors are athletic, playful, and the most popular breed of dog by registered ownership in Australia, Canada, New Zealand,[3] the United Kingdom,[4] and the United States (since 1991)",
+                    Price = 100M, Quantity = 30
                 },
 
                 new Manage
                 {
                     Name = "Dalmatian",
                     DateReceived = DateTime.Now,
-                    Description = "This is a standard full blood Dalmatian that goes by the Name Spot. He's 2 years old, great with kids, and loves to cuddle",
+                    Description = "The Dalmatian is a breed of dog named after the historical region of Dalmatia. The Dalmatian is noted for its unique black or liver spotted coat and was mainly used as a carriage dog in its early days. Today, this dog remains a well-loved family pet, and many dog enthusiasts enter their pets into kennel club competitions.",
                     Price = 400M,
-                    Quantity = 1
+                    Quantity = 5
                 },
 
                 new Manage
                 {
-                    Name = "Fenix Fox",
+                    Name = "Fennec Fox",
                     DateReceived = DateTime.Now,
-                    Description = "We have a litter of Fenix Fox! They're pretty loyal pets, but can be hard to train. Suggestion: Experienced Owners Only.",
+                    Description = "The fennec fox or fennec (Vulpes zerda) is a small nocturnal fox found in the Sahara of North Africa. Its most distinctive feature is its unusually large ears, which serve to dissipate heat. Its name comes from the Arabic word فنك (fanak), which means fox, and the species name zerda comes from the Greek word xeros which means dry, referring to the fox's habitat.[2] The fennec is the smallest species of canid in the world. Its coat, ears, and kidney functions have adapted to high-temperature, low-water, desert environments. In addition, its hearing is sensitive enough to hear prey moving underground. It mainly eats insects, small mammals, and birds.",
                     Price = 2000M,
-                    Quantity = 3
+                    Quantity = 1
                 }
 
                 );

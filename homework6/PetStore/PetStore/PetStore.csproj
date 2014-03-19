@@ -173,6 +173,14 @@
     <Compile Include="Migrations\201403182307021_DataAnnotations.Designer.cs">
       <DependentUpon>201403182307021_DataAnnotations.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201403190023068_DetailUpdate.cs" />
+    <Compile Include="Migrations\201403190023068_DetailUpdate.Designer.cs">
+      <DependentUpon>201403190023068_DetailUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201403190024324_UpdatedValidations.cs" />
+    <Compile Include="Migrations\201403190024324_UpdatedValidations.Designer.cs">
+      <DependentUpon>201403190024324_UpdatedValidations.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -250,6 +258,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201403182307021_DataAnnotations.resx">
       <DependentUpon>201403182307021_DataAnnotations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201403190023068_DetailUpdate.resx">
+      <DependentUpon>201403190023068_DetailUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201403190024324_UpdatedValidations.resx">
+      <DependentUpon>201403190024324_UpdatedValidations.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

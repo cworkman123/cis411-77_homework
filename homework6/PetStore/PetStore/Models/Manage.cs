@@ -16,7 +16,7 @@ namespace PetStore.Models
         public string Name { get; set; }
 
         
-        [StringLength(500, MinimumLength = 15)]
+        [StringLength(50000, MinimumLength = 15)]
         public string Description { get; set; }
 
         [Required]
