@@ -11,7 +11,9 @@ namespace PetStore.Models
     {
         public int ID { get; set; }
 
-        
+        [Display(Name = "Picture")]
+        [StringLength(10000000, MinimumLength = 1)]
+        public string ImgLink { get; set; }
 
         [Required]
         [StringLength(60, MinimumLength = 3) ]
@@ -34,6 +36,8 @@ namespace PetStore.Models
 
         [DataType(DataType.Currency)]
         public decimal Price { get; set; }
+
+
 
 
     }

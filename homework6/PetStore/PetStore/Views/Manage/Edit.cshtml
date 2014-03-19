@@ -16,7 +16,16 @@
         <hr />
         @Html.ValidationSummary(true)
         @Html.HiddenFor(model => model.ID)
-
+        
+        
+        
+        <div class="form-group">
+            @Html.LabelFor(model => model.ImgLink, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.ImgLink)
+                @Html.ValidationMessageFor(model => model.ImgLink)
+            </div>
+        </div>
         <div class="form-group">
             @Html.LabelFor(model => model.Name, new { @class = "control-label col-md-2" })
             <div class="col-md-10">

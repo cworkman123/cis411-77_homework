@@ -193,6 +193,18 @@
     <Compile Include="Migrations\201403191538012_UpdateConnectionBase.Designer.cs">
       <DependentUpon>201403191538012_UpdateConnectionBase.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201403192227291_AddedImgLinkField.cs" />
+    <Compile Include="Migrations\201403192227291_AddedImgLinkField.Designer.cs">
+      <DependentUpon>201403192227291_AddedImgLinkField.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201403192244449_AddedImgLinkField1.cs" />
+    <Compile Include="Migrations\201403192244449_AddedImgLinkField1.Designer.cs">
+      <DependentUpon>201403192244449_AddedImgLinkField1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201403192250333_IncreaseSizeOfImgLinkField.cs" />
+    <Compile Include="Migrations\201403192250333_IncreaseSizeOfImgLinkField.Designer.cs">
+      <DependentUpon>201403192250333_IncreaseSizeOfImgLinkField.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -286,6 +298,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201403191538012_UpdateConnectionBase.resx">
       <DependentUpon>201403191538012_UpdateConnectionBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201403192227291_AddedImgLinkField.resx">
+      <DependentUpon>201403192227291_AddedImgLinkField.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201403192244449_AddedImgLinkField1.resx">
+      <DependentUpon>201403192244449_AddedImgLinkField1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201403192250333_IncreaseSizeOfImgLinkField.resx">
+      <DependentUpon>201403192250333_IncreaseSizeOfImgLinkField.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

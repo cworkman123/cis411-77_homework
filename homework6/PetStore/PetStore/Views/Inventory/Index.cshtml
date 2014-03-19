@@ -28,7 +28,7 @@
 <table class="table">
     <tr>
         <th>
-            Picture
+            @Html.DisplayNameFor(model => model.ImgLink)
         </th>
         <th>
             @Html.DisplayNameFor(model => model.Name)
@@ -42,7 +42,7 @@
 @foreach (var item in Model) {
     <tr>
         <td class="thumbnail">
-            <img src="http://www.bingsdoggrooming.com/pawprint.gif" alt="Red Paw Print" />
+            <img src=@Html.DisplayFor(modelItem => item.ImgLink)  />
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.Name)

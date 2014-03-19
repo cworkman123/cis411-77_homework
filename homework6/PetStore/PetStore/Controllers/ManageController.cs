@@ -54,7 +54,7 @@ namespace PetStore.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include="ID,Name,Description,DateReceived,Quantity,Price")] Manage manage)
+        public ActionResult Create([Bind(Include="ID,,ImgLink,Name,Description,DateReceived,Quantity,Price")] Manage manage)
         {
             if (ModelState.IsValid)
             {
@@ -86,7 +86,7 @@ namespace PetStore.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include="ID,Name,Description,DateReceived,Quantity,Price")] Manage manage)
+        public ActionResult Edit([Bind(Include="ID,ImgLink,Name,Description,DateReceived,Quantity,Price")] Manage manage)
         {
             if (ModelState.IsValid)
             {
