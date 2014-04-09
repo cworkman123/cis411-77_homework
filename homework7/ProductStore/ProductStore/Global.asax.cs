@@ -16,6 +16,9 @@ namespace ProductStore
     {
         protected void Application_Start()
         {
+            System.Data.Entity.Database.SetInitializer(
+    new ProductStore.Models.OrdersContextInitializer());
+
             AreaRegistration.RegisterAllAreas();
 
             WebApiConfig.Register(GlobalConfiguration.Configuration);
