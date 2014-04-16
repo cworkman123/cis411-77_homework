@@ -14,11 +14,14 @@ namespace ProductStore.Models
         // System.Data.Entity.Database.SetInitializer(new System.Data.Entity.DropCreateDatabaseIfModelChanges<ProductStore.Models.OrdersContext>());
 
         public OrdersContext() : base("name=OrdersContext")
-        {
+        {   // Database.SetInitializer<OrdersContext>(new CreateDatabaseIfNotExists<OrdersContext>());
         }
+
+
 
         public DbSet<Product> Products { get; set; }
         public DbSet<Order> Orders { get; set; }
         public DbSet<OrderDetail> OrderDetails { get; set; }
+
     }
 }
